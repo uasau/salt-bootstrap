@@ -3711,7 +3711,7 @@ name=SaltStack ${repo_rev} Release Channel for RHEL/CentOS \$releasever
 baseurl=${base_url}
 skip_if_unavailable=True
 gpgcheck=1
-gpgkey=${base_url}${gpg_key}
+gpgkey=${base_url}${gpg_key} https://repo.saltstack.com/yum/redhat/$releasever/$basearch/latest/base/RPM-GPG-KEY-CentOS-7
 enabled=1
 enabled_metadata=1
 _eof
